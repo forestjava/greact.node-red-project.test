@@ -16,5 +16,51 @@
         "x": 110,
         "y": 40,
         "wires": []
+    },
+    {
+        "id": "bd5295ab26f97d23",
+        "type": "inject",
+        "z": "a75dc21a181fad7b",
+        "name": "Нажми здесь",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "demo",
+        "payload": "Hello, World!",
+        "payloadType": "str",
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "e690f0a2f53e2026"
+            ]
+        ]
+    },
+    {
+        "id": "e690f0a2f53e2026",
+        "type": "debug",
+        "z": "a75dc21a181fad7b",
+        "name": "Получи там",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 140,
+        "wires": []
     }
 ]
